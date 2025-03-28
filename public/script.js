@@ -15,6 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('themeToggle').addEventListener('click', toggleTheme);
 });
 
+function generateVerifyToken() {
+    const token = Math.random().toString(36).substring(2) + 
+                 Math.random().toString(36).substring(2);
+    document.getElementById('verifyToken').value = token;
+}
+
 function saveTokens() {
     const pageAccessToken = document.getElementById('pageAccessToken').value;
     const verifyToken = document.getElementById('verifyToken').value;
@@ -38,4 +44,4 @@ function saveTokens() {
         document.getElementById('messages').innerHTML = 
             `<p style="color: red">Error saving configuration: ${error}</p>`;
     });
-}
+        }
