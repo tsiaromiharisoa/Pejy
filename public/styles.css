@@ -180,3 +180,49 @@ button:hover {
     text-align: center;
     transition: all 0.3s ease;
 }
+
+
+.admin-info {
+    margin-top: 30px;
+}
+
+.admin-info h2 {
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.admin-details {
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.admin-details h3 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.admin-details p {
+    margin: 10px 0;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.admin-details a {
+    color: #0097fb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.admin-details a:hover {
+    color: #2196f3;
+    text-decoration: underline;
+}
+
+.highlight {
+    color: #2196f3;
+    font-weight: bold;
+}
