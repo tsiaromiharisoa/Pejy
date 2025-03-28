@@ -25,7 +25,10 @@
             </div>
             <div class="input-group">
                 <label for="verifyToken">🔐 Verify Token:</label>
-                <input type="text" id="verifyToken" placeholder="Enter your verify token">
+                <div class="token-input">
+                    <input type="text" id="verifyToken" placeholder="Enter your verify token">
+                    <button onclick="generateVerifyToken()" class="generate-btn">Générer</button>
+                </div>
             </div>
             <button onclick="saveTokens()">💾 Save Configuration</button>
         </div>
